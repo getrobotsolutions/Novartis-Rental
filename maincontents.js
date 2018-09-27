@@ -25,7 +25,7 @@ jokes[19]="Why did the phone wear glasses? Because it lost all of its contacts. 
 jokes[20]="Why do optometrists live so long? They dilate.  ";
 function GetJoke(){
     var temp=Math.floor((Math.random() * 20) + 1);
-    alert(jokes[temp]);
+    PlaySpeech("jokes[temp]");
 }
 
 
