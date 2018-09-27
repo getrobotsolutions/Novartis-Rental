@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta content="text/html" charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=10" />
+
+<link rel="stylesheet" type="text/css" href="RobotAvatar.css" />
+
+<!-- 기본으로 포함되어야 하는 js -->
+<script language="JavaScript" type="text/javascript"
+	src="../../Scripts/FlashPlayer.js"></script>
+<script language="JavaScript" type="text/javascript"
+	src="../../Scripts/BaseCommand.js"></script>
+<script language="JavaScript" type="text/javascript"
+	src="../../Scripts/BaseEvent.js"></script>
+
+<!-- 추가적으로 포함되는 js -->
+<script language="JavaScript" type="text/javascript"
+	src="RobotAvatar.js"></script>
+
+</head>
+
+<body onload="JSMain()" onbeforeunload="JSUnload()" scroll="no">
+
+	
+
+	<div class="canvas">
+		<canvas id="camImage" width="560" height="560"></canvas>
+	</div>
+
+	 <div class="bg">
+		<img src="Image/Avatar_bg.png">
+	</div> 
+	
+	<div class="home">
+		<img src="Image/Home_Button.png" onclick="Home()">
+	</div>
+
+	<div class="shot" id="shot">
+		<img id="shot" src="Image/avatar_shot_nor.png" onclick="shot()">
+	</div>
+
+ 	 <div class="frame" id="frame" style="display: none">
+		<img src="Image/avatar_frame.png">
+	</div>
+	
+	<div class="number" id="number" style="display: none">
+		<img id="number_img" src="Image/3_re.png">
+	</div>
+ 
+	<div class="delete">
+		<img id="delete" src="Image/Avatar_delete_none.png" onclick="del()">
+	</div>
+
+</body>
+</html>

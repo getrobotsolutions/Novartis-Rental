@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta content="text/html" charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=10"/>
+
+    <script language="JavaScript" type="text/javascript" src="Scripts/BaseCommand.js"></script>
+    <script language="JavaScript" type="text/javascript" src="Scripts/BaseEvent.js"></script>
+    <script language="JavaScript" type="text/javascript" src="Scripts/LogConsole.js"></script>
+    <script language="JavaScript" type="text/javascript" src="Scripts/Language.js"></script>
+    <script language="JavaScript" type="text/javascript" src="Scripts/custom.js"></script>
+    <script type="text/javascript" src="Scripts/jquery-3.3.1.min.js"></script>
+    <script language="JavaScript" type="text/javascript" src="maincontents.js"></script>
+    <script src="boots/js/bootstrap.min.js"></script> 
+    <link rel="stylesheet" href="boots/css/bootstrap.min.css">
+    
+
+
+    <link href="css/Main.css" rel="stylesheet" type="text/css"/>
+</head>
+
+
+<body  onbeforeunload="JSUnload()" ondragstart="return false;" ondrop="return false;" style="-ms-user-select:none;" oncontextmenu="return false;">
+
+<header>
+    
+
+</header>
+<section class="main-content">
+  <h1 class="welcome-text">Welcome to Novartis</h1>
+  <div class="get-started">Get Started</div>
+
+  <div class="navigation">
+    <div class="col-sm-6 navigation-box" style="background-color: #f58144">
+      <img src="assets/icons/joke-icon.png" class="navigation-icon">
+      <h2 class="navigation-text">HEAR A JOKE</h2>
+      
+    </div>
+    <div class="col-sm-6 navigation-box" style="background-color: #023761" onclick="FC_ContentsCall('BoothSchedule')">
+      <img src="assets/icons/booth-schedule.png" class="navigation-icon">
+      <h2 class="navigation-text">CHECK BOOTH SCHEDULE</h2>
+    </div>
+    <div class="col-sm-6 navigation-box" style="background-color: #5291dd" onclick="FC_ContentsCall('Selfie')">
+      <img src="assets/icons/selfie.png" class="navigation-icon">
+      <h2 class="navigation-text">TAKE A SELFIE</h2>
+    </div>
+    <div class="col-sm-6 navigation-box" style="background-color: #fcb13b">
+      <img src="assets/icons/booth-map.png" class="navigation-icon">
+      <h2 class="navigation-text">VIEW BOOTH MAP</h2>
+    </div>
+    <div class="col-sm-6 navigation-box" style="background-color: #023761">
+      <img src="assets/icons/dance.png" class="navigation-icon">
+      <h2 class="navigation-text">DANCE WITH THE ROBOT</h2>
+    </div>
+    <div class="col-sm-6 navigation-box" style="background-color: #5291dd">
+      <img src="assets/icons/novartis-icon.png" class="navigation-icon">
+      <h2 class="navigation-text">NOVARTIS PRODUCT OFFERINGS</h2>
+    </div>
+    <div class="col-sm-6 navigation-box close-menu" style="background-color: #f58144">
+      <img src="assets/icons/close.png" class="navigation-icon ">
+      <h2 class="navigation-text">CLOS MENU</h2>
+    </div>
+  </div>
+
+
+  <footer>
+    <p style="position: relative;left: 841px;width: 150px;">Alcon Pharmaceuticals</p>
+    <div class="footer-section">
+      
+      <div class="col-sm-4">Novartis Pharmaceuticals Corporation
+      East Hanover, New Jersey 07936-1080</div>
+      <div class="col-sm-3">©2018 Novartis</div>
+      <div class="col-sm-2">9/18</div>
+      <div class="col-sm-3">T-DZL-1364375</div>
+     
+    </div>
+  </footer>
+</section>
+
+
+
+
+<div id="dialog-overlay"></div>
+<div id="dialog-box">
+
+</div>
+<!--JavaScript at end of body for optimized loading-->
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script type="text/javascript">
+  //setTimeout(refresh, 60000)
+function refresh() {
+  //document.location.reload(true);
+}
+</script>
+
+</body>
+</html>

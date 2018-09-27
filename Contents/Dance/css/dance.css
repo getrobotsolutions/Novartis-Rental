@@ -1,0 +1,167 @@
+/* Font Family
+================================================== */
+
+
+
+/* Global Styles
+================================================== */
+
+.container {
+    -webkit-font-smoothing:antialiased;
+    -webkit-text-size-adjust:100%;
+    color:#fff;
+    font-size:105%;
+    font-family:"Oxygen", HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight:300;
+    letter-spacing:.025rem;
+    line-height:1.618;
+    padding:1rem 0;
+
+}
+
+.home{
+    float: left;
+    height: 57px;
+    padding-right: 30px;
+}
+
+
+/* Setup
+================================================== */
+
+.container {
+    position:relative;
+    //margin:0 auto;
+    //margin: 20px;
+    margin-top: 80px;
+    margin-left: 20px !important;
+    /* background-color:#FF6600;*/
+
+
+}
+.column { width:inherit; }
+
+
+
+
+audio {
+    margin:0 15px 0 14px;
+    width:670px;
+}
+
+#mainwrap {
+    background: rgba(54, 25, 25, .5);
+    padding-bottom: 30px;
+    ;
+
+}
+
+#audiowrap,
+#plwrap {
+    margin-top:40px;
+    margin-left: -30px;
+}
+
+#tracks {
+    position:relative;
+    text-align:center;
+    color: white;
+    font-size: 40px;
+    margin-top: 32px;
+
+}
+
+#nowPlay {
+    display:inline;
+    margin-left: 35%;
+}
+
+#npAction {
+    padding:131px;
+}
+
+#npTitle {
+    padding:21px;
+}
+
+#plList li {
+    cursor:pointer;
+    display:block;
+    margin:0;
+    padding:21px;
+
+    width: 97%;
+    border: thick solid #d9534f;
+    margin: 10px;
+}
+
+#plList li:hover {
+    background-color:rgba(0,0,0,.1);
+    width: 97%;
+}
+
+.plItem {
+    position:relative;
+    font-size: 30px;
+    color: white;
+}
+
+.plTitle {
+    left:50px;
+    overflow:hidden;
+    position:absolute;
+    right:65px;
+    text-overflow:ellipsis;
+    top:0;
+    white-space:nowrap;
+
+
+
+}
+
+.plNum {
+    width:25px;
+}
+
+.plLength {
+    padding-left:21px;
+    position:absolute;
+    right:21px;
+    top:0;
+}
+
+.plSel,
+.plSel:hover {
+    background-color:rgba(0,0,0,.1);
+    color:#fff;
+    cursor:default !important;
+}
+
+
+.playAudio,.stopAudio{
+    margin: 80px;
+}
+.songaction{
+
+    width: 100%;
+}
+#nowPlay{
+
+}
+.bagimage{
+    color: pink;
+    background-image: url("../images/01.jpg");
+    height: 310px;
+    background-size: auto;
+}
+
+.bagoverlay{
+    background: rgba(54, 25, 25, .4);
+    height: 310px;
+    background-size: auto;
+}
+.yellowcolor{
+
+    background-color: #d9534f;
+    height: 40px;
+}

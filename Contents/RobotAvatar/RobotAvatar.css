@@ -1,0 +1,140 @@
+@font-face {
+    font-family: Bukra-Regular;
+    src: url(../../css/Fonts/OpenSans-Regular.ttf);
+}
+@font-face {
+    font-family: Bukra-Light;
+    src: url(../../css/Fonts/OpenSans-Light.ttf);
+}
+body{
+	//font-family: 'Bukra-Light' !important;
+/*font-weight: bold;*/
+}
+body {
+	margin: 0;
+	padding: 0;
+	//overflow: hidden;
+}
+.home{
+	float: left;
+	height: 57px;
+	padding-right: 30px;
+
+}
+
+
+.main{
+	background-color: white;
+    min-height: 1150px;
+	padding-top: 40px;}
+
+.bg {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	/*top: 200px;*/
+	top: 310px;
+	margin-bottom: 50px;
+}
+.bg img{
+	width: 1080px;
+	/*height: 715px;*/
+}
+
+.canvas {
+	position: absolute;
+    /*left: 283px;*/
+    /* z-index: -2; */
+    /*top: 560px;
+    height: 394px;
+    width: 281px;*/
+    left: 280px;
+    top: 423px;
+}
+
+.frame {
+	position: absolute;
+	left: 327px;
+    top: 428px;
+}
+
+#frame {
+	/* display: none; */
+	width: 280px;
+}
+
+.number {
+	position: absolute;
+	/*left: 362px;
+	/*top: 549px;
+	top:730px;*/
+	left: 463px;
+    top: 578px;
+}
+
+#number {
+	/* display: none; */
+}
+
+.shot {
+	position: absolute;
+    left: 384px;
+    /* top: 474px; */
+    top: 503px;
+}
+.shot img{
+	width: 280px;
+    /*height: 401px;*/
+}
+
+.delete {
+	position: absolute;
+	right: 65px;
+	top: 1085px;
+}
+.delete button{
+	background-color: #d4d4d4;
+	width: 200px;
+	font-size: 30px;
+	border-radius: 25px;
+	padding: 5px;
+	border: solid #ffffff;
+}
+.img-home {
+	position: absolute;
+	z-index: 99;
+	margin-top: -64px;
+	/*cursor: pointer;*/
+	height: 66px;
+}
+footer {
+	position: absolute;
+	bottom: 372px !important;
+}
+.titleAvatar{
+	background-color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin: 0;
+    color: black;
+}
+#change-us, #change-ar{text-decoration: none;}
+.deltext{
+	    color: black;
+    position: absolute;
+    top: 700px;
+    left: 350px;
+    font-size: 35px;
+    width: 388px;
+    line-height: 79px;
+    text-align: center;
+    }
+
+     a {
+    color: #008a97 !important;
+}
+ #change-us, #change-ar{padding: 0px 10px 5px 10px !important; border-radius: 5px;text-decoration: none;}
+ .active{
+    color: rgb(255, 255, 255) !important;
+ background: #008a97 !important;
+  }

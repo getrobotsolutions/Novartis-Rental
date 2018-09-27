@@ -1,0 +1,111 @@
+//*******************************************************************************
+//   FURO-D Contents Templage JS : 2016.11.14
+
+//   Comment : (1) Contents 정리.
+//             (2)
+//             (3)  
+//*******************************************************************************
+
+var refreshIntervalId ;
+	function JSMain() {
+		refreshIntervalId = setInterval("test()", 33);
+		setTimeout("Init()",3000);
+	}
+
+	function Init(){	
+		FC_ReadSelectedMovie(readCookie('CurrentMovie'));
+	}
+
+	function JSUnload() {
+		DeleteRobotFace();
+		HideAdMovie();
+	}
+	
+	function FC_ReadSelectedMovie() {
+		var tmpIdx = readCookie("CurrentMovie");
+		FC_ChangeAdMovieHtml(tmpIdx);
+	}
+
+	function FC_ChangeAdMovieHtml(strIdx) {
+		var path;
+		if (strIdx == "1")
+			path = "../../Movies/main1.avi";
+		if (strIdx == "2")
+			path = "../../Movies/main2.avi";
+		if (strIdx == "3")
+			path = "../../Movies/main3.avi";
+		if (strIdx == "4")
+			path = "../../Movies/main4.avi";
+		PlayAdMovie(path, 0, 1200, 1080, 720, true);
+	}
+	
+	function Home() {
+		location.href = "../../maincontents.htm";
+	}
+
+	function test() {
+		var img = GetCaptureImage();
+		var canvas = document.getElementById("camImage");
+		var ctx = canvas.getContext("2d");
+		var image = new Image();
+
+		image.onload = function() {
+			ctx.drawImage(this,-300,0, 1080, 720);
+		}
+		image.src = "data:image/gif;base64," + img;
+	}
+
+	function shot() {
+
+		document.getElementById('shot').style.display = "none";
+		document.getElementById('number').style.display = "";
+		document.getElementById('frame').style.display = "";
+
+		setTimeout('Timer1()', 1000);
+		setTimeout('Timer2()', 2000);
+		setTimeout('Timer3()', 3000);
+	}
+
+	function Timer1() {
+		
+		document.getElementById('number_img').src =  "Image/2_re.png" ;
+		
+	}
+	
+
+	function Timer2() {
+
+		document.getElementById('number_img').src = "Image/1_re.png";
+		
+	}
+
+	function Timer3() {
+		
+		document.getElementById('shot').style.display = "none";
+		document.getElementById('number').style.display = "none";
+		document.getElementById('frame').style.display = "none";
+		document.getElementById('number_img').src = "Image/3_re.png";
+		document.getElementById('delete').src = "Image/Avatar_delete_nor.png";
+		clearInterval(refreshIntervalId);
+		
+		GetCaptureImage();
+		GetCaptureImageBase64();
+		SetRobotFace();
+		MakeRobotFace();
+	}
+	
+	function del(){
+		document.getElementById('delete').src = "Image/Avatar_delete_none.png";
+		document.getElementById('shot').style.display = "";
+		DeleteRobotFace();
+		JSMain();
+	}
+
+
+	function OnUserApproached() {
+
+	}
+
+	function OnUserDisappeared() {
+		location.href = "../../IdlePage/IdlePage.htm";
+	}
