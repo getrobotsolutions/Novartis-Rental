@@ -48,9 +48,11 @@ audio {
     margin:0 15px 0 14px;
     width:670px;
 }
-
+.wrap{
+    padding-top: 200px;
+}
 #mainwrap {
-    background: rgba(54, 25, 25, .5);
+    background-color: #3fb8e9;
     padding-bottom: 30px;
     ;
 
@@ -73,7 +75,7 @@ audio {
 
 #nowPlay {
     display:inline;
-    margin-left: 35%;
+    margin-left: 300px;
 }
 
 #npAction {
@@ -91,7 +93,9 @@ audio {
     padding:21px;
 
     width: 97%;
-    border: thick solid #d9534f;
+    background-color: #f7941d;
+    border-radius: 10px;
+    text-align: center;
     margin: 10px;
 }
 
@@ -107,16 +111,6 @@ audio {
 }
 
 .plTitle {
-    left:50px;
-    overflow:hidden;
-    position:absolute;
-    right:65px;
-    text-overflow:ellipsis;
-    top:0;
-    white-space:nowrap;
-
-
-
 }
 
 .plNum {
@@ -150,7 +144,7 @@ audio {
 }
 .bagimage{
     color: pink;
-    background-image: url("../images/01.jpg");
+    background-color: #023761;
     height: 310px;
     background-size: auto;
 }
@@ -159,9 +153,18 @@ audio {
     background: rgba(54, 25, 25, .4);
     height: 310px;
     background-size: auto;
+    padding-top: 50px;
 }
 .yellowcolor{
-
-    background-color: #d9534f;
-    height: 40px;
+    background-color: #3fb8e9;
+    height: 250px;
+    padding-top: 20px;
+    text-align: center;
 }
+  .img-home {position: absolute;
+      top: 32px;
+      right: 45px;
+      width: 147px;
+      z-index: 99;
+      cursor: pointer;
+      height: 66px;}
