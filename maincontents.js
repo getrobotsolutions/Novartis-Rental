@@ -28,6 +28,12 @@ function GetJoke(){
     PlaySpeech(jokes[temp]);
 }
 
+var initialJokeTime=setTimeout(GetJoke,60000);
+
+$(document).click(function(event) {
+    clearTimeout( initial );
+    initialJokeTime=setTimeout(GetJoke,120000);
+});
 
 function LanguageChange(lang)
 {
@@ -168,7 +174,7 @@ $(document).ready(function(){
 })
 
 
-setTimeout(function () {
+/*setTimeout(function () {
     ShowTime();
     console.log("Time Showed");
 
@@ -201,7 +207,7 @@ setTimeout(function () {
 
 
 
-}, 2000);
+}, 2000);*/
 
 
 

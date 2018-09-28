@@ -1,3 +1,6 @@
+function JSMain(){
+	
+}
 var SLEEP_TIME = 2000;
 var LinearVelocity = 0.10;
 var AngularVelocity = 35.0;
