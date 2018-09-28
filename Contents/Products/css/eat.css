@@ -73,7 +73,8 @@
 
 #dialog-box .dialog-content {
   /* style the content */
-  max-height: 1200px;
+  width: 924px;
+  max-height: 1525px;
   overflow: hidden;
   text-align:left; 
   padding:10px; 
