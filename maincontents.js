@@ -31,7 +31,7 @@ function GetJoke(){
 var initialJokeTime=setTimeout(GetJoke,30000);
 
 $(document).click(function(event) {
-    clearTimeout( initial );
+    clearTimeout( initialJokeTime );
     initialJokeTime=setTimeout(GetJoke,120000);
 });
 
