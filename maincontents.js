@@ -28,7 +28,7 @@ function GetJoke(){
     PlaySpeech(jokes[temp]);
 }
 
-var initialJokeTime=setTimeout(GetJoke,60000);
+var initialJokeTime=setTimeout(GetJoke,30000);
 
 $(document).click(function(event) {
     clearTimeout( initial );
