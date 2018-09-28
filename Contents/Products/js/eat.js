@@ -79,5 +79,5 @@ function ShowPdfPopup(src){
     $('#dialog-overlay').css({height:maskHeight, width:maskWidth}).show();
     $('#dialog-box').css({top:dialogTop, left:dialogLeft}).show();
 
-    document.getElementById('dialog-box').innerHTML = '<a href="#" class="button">Close</a><div class="dialog-content"><span style="z-index: 2147483647;width:50px;height:50px;position:absolute;top:95px;right:30px;"></span><iframe src="'+src+'" toolbar="0" width="100%" height="1625" sandbox="allow-scripts"></iframe></a>';
+    document.getElementById('dialog-box').innerHTML = '<a href="#" class="button">Close</a><div class="dialog-content"><span style="z-index: 2147483647;width:50px;height:50px;position:absolute;top:95px;right:30px;"></span><iframe src="'+src+'" toolbar="0" width="100%" height="1625" ></iframe></a>';
 }
