@@ -94,9 +94,9 @@ function FC_ContentsCall(strContentsName, strLanguage)
             PlaySpeech(speak[1]);
             location.href = "Contents/Video/index.html";
             break;
-        case "Mirrax":
-            PlaySpeech(speak[2]);
-            location.href = "Contents/Mirrax/index.html";
+        case "Products":
+            //PlaySpeech(speak[2]);
+            location.href = "Contents/Products/index.html";
             break;
         
 

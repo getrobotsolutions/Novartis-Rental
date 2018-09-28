@@ -1,21 +1,30 @@
-.bmg{
+.main-content{width: 1080px;    display: inline-block;    height: 1782px;}
+.img-home {position: absolute;
+      top: 32px;
+      right: 45px;
+      width: 147px;
+      z-index: 99;
+      cursor: pointer;
+      height: 66px;}
+  .wrap{   
+    height: 1650px;
+    background-color: #5291dd;
+    margin: 50px 50px;
+    border-radius: 10px;padding-top: 150px;
+  }
+  h1, h2{color: white;margin: 20px 0;}
+  .product-box{
+    margin-top: 50px;
+    width: 380px;
+    height: 380px;
+    background-color: white;
+    border-radius: 10px;    
+    margin: 20px;
+    text-align: center;
+    padding: 120px 0 0 0;
 
-    height: 1158px;
-}
-
-.home{
-    float: left;
-    height: 57px;
-    padding-right: 30px;
-
-}
-  .img-home {position: absolute;top: -60px;z-index: 99;height: 62px;cursor: pointer; cursor: hand;}
-  .wrap{    padding-top: 20px;}
-     .icon{
-      
-      width: 550px;
-      height: 380px;
-    }
+  }
+  .products-box{margin-left: 65px;height: 470px;}
   #dialog-overlay {
 
   /* set it to fill the whil screen */
@@ -50,12 +59,12 @@
   
   background:#eee;
   /* styling of the dialog box, i have a fixed dimension for this demo */ 
-  width:850px; 
+  width:950px; 
   
   
   /* make sure it has the highest z-index */
   position:absolute; 
-  top: 20% !important;
+  top: 10% !important;
   z-index:5000; 
 
   /* hide it by default */
