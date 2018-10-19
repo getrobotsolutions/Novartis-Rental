@@ -151,8 +151,9 @@ canvas  {
 }
 
 .footer{
-	width: 100%;
+	width: 97%;
 	position: absolute;
     bottom: 160px;
     color: white;
+    left: 20px;
 }
