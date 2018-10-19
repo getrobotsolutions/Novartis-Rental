@@ -3,14 +3,14 @@
 
 var speak = new Array( );
 var jokes = new Array( );
-jokes[1]="Ophthalmologists take the term “direct eye contact” very seriously.";
-jokes[2]="I’m sure you’re the apple of someone’s eye.";
-jokes[3]="I’m just poking a little fun. Be happy that I’m not poking eyes!";
-jokes[4]="I spy with my little eye nothing, because I have two normal sized eyes.";
-jokes[5]="Did you hear about the two eye drops that got married? There wasn’t a dry eye in the house.";
-jokes[6]="I saw what you did over there. I’ve got eyes in the back of my head. Just kidding, only two realistically placed robotic eyes.";
-jokes[7]="Did you hear about the guy who went crazy after his eye surgery? He started seeing things.";
-jokes[8]="I can’t believe my eyes! Because I am not programmed to process human emotions such as surprise.";
+jokes[1]="Did you hear about that guy with ten eyes? Man, I bet he’s seen some stuff.";
+jokes[2]="Scrabble : it’s all fun and games until someone loses an “I”";
+jokes[3]="What did the sailor turned ophthalmology student say to his professor? Eye, eye, captain";
+jokes[4]="These jokes keep getting cornea and cornea";
+jokes[5]="What do ophthalmologists like to get for Halloween? Eye candy.";
+jokes[6]="What do you call a deer with no eyes? No-eye-deer.";
+jokes[7]="Why did the phone wear glasses? Because it lost all of its contacts";
+/*jokes[8]="I can’t believe my eyes! Because I am not programmed to process human emotions such as surprise.";
 jokes[9]="Did you hear about that guy with ten eyes? Man, I bet he’s seen some stuff.";
 jokes[10]="Did you hear that I had to buy super expensive glasses? Yeah it’s not an eye-deal situation. a.  What do you call it when you have to buy super expensive glasses? Not eye-deal.";
 jokes[11]="Scrabble : it’s all fun and games until someone loses an “I”";
@@ -22,9 +22,9 @@ jokes[16]="What do ophthalmologists like to get for Halloween? Eye candy.";
 jokes[17]="Where did the eye doctor keep all his kittens? On Cat-A-Racks!";
 jokes[18]="What do you call a deer with no eyes? No-eye-deer.";
 jokes[19]="Why did the phone wear glasses? Because it lost all of its contacts. ";
-jokes[20]="Why do optometrists live so long? They dilate.  ";
+jokes[20]="Why do optometrists live so long? They dilate.  ";*/
 function GetJoke(){
-    var temp=Math.floor((Math.random() * 20) + 1);
+    var temp=Math.floor((Math.random() * 7) + 1);
     PlaySpeech(jokes[temp]);
 }
 
@@ -96,9 +96,9 @@ function FC_ContentsCall(strContentsName, strLanguage)
             //PlaySpeech(speak[0]);
             location.href = "Contents/Booth-schedule/index.html";
             break;
-        case "Videos":
-            PlaySpeech(speak[1]);
-            location.href = "Contents/Video/index.html";
+        case "BoothMap":
+            //PlaySpeech(speak[1]);
+            location.href = "Contents/BoothMap/index.html";
             break;
         case "Products":
             //PlaySpeech(speak[2]);
