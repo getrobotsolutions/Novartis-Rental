@@ -109,7 +109,7 @@ function UpdateCamImage()
 //---------------------------------------------------------------------------//
 var isPhotoTaken = false;
 function TakePhoto()
-{   
+{   SelectFrame(2);
     window.external.SetVolume(1);
     if(readCookie("CurrentLanguage")=="English"){
         window.external.ChangeLanguage("en-us");
@@ -176,7 +176,7 @@ function CountDown()
 //---------------------------------------------------------------------------//
 //-- 액자 선택 ---------------------------------------------------------------//
 //---------------------------------------------------------------------------//
-var frameImagePath = "";
+var frameImagePath = GetCurrentFolderPath() + "Images/photoframe06.png";
 function SelectFrame(num)
 {
     // 액자 없음
@@ -294,6 +294,7 @@ function SaveImage(str)
 	var directory = curPath + "/../Resources/Photo/";
 	
 	imageFilePath = directory + str + ".jpg";
+    window.external.SaveImage(imageFilePath, frameImagePath);
 	if (isRobot)
     {
         window.external.SaveImage(imageFilePath, frameImagePath);
