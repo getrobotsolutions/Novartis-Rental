@@ -109,10 +109,10 @@ $(document).ready(function(){
         $('.navigation').show();
         
     });
-    /*if (readCookie("NavigationState")) {
+    if (readCookie("NavigationState")) {
         $('.welcome-text, .get-started, footer').hide();
         $('.navigation').show();
-    }*/
+    }
     $('.close-menu').click(function(){
         $('.navigation').hide();
         $('.welcome-text, .get-started, footer').show();
