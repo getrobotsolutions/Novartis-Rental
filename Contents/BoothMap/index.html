@@ -292,21 +292,26 @@ var requiredMinorVersion = 0;
 var requiredRevision = 2;
 // -----------------------------------------------------------------------------
 // -->
+
+function Home(){
+	//location.href="../../maincontents.htm";
+	window.history.back();
+}
 </script>
 <style type="text/css">
 	object{
 		height: 1720px;
 		position: relative;
-		top: 100px;
+		top: 20px;
 	}
 </style>
 </head>
 <body bgcolor="#999999" style="margin:0;">
-	<header style="position: relative;top: 0;left: 0; z-index:1000;width: 1080px;height: 100px;
+	<header style="position: relative;top: 0;left: 0; width: 1080px;height: 100px;
 
 ">
-<img src="../../assets/header.png" onclick="location.href='../../maincontents.htm'">
-		<div class="img-home" style="position: absolute;top: 32px;right: 45px;width: 147px;
+<img src="../../assets/header.png" onclick="Home();">
+		<div class="img-home" style="position: absolute;z-index:1000;top: 32px;right: 45px;width: 147px;
     	z-index: 99;cursor: pointer;height: 66px;" ></div>
 	</header>
 <!--url's used in the movie-->
