@@ -291,11 +291,23 @@ var requiredMinorVersion = 0;
 var requiredRevision = 2;
 // -----------------------------------------------------------------------------
 // -->
+function Home(){
+	//location.href="../../maincontents.htm";
+	window.history.back();
+}
 </script>
+<style type="text/css">
+	embed{
+		height: 1548px;
+		position: relative;
+		top: 0px;
+	}
+</style>
 </head>
 <body bgcolor="#999999" style="margin: 0">
-	<header style=" z-index: 1000; position:absolute;width: 1080px;height: 80px;background-image: url(../../../assets/header.png);background-position: 0 -25px;
+<header style="z-index:1000;position:relative;width: 1080px;height: 80px;
 ">
+<img src="../../../assets/header.png" onclick="Home();" style="z-index:1000;position: absolute;top: -20px;">
 		<div class="img-home" style="position: absolute;top: 32px;right: 45px;width: 147px;
     	z-index: 99;cursor: pointer;height: 66px;" onclick="location.href='../index.html'"></div>
 	</header>
