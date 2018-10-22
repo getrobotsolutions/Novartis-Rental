@@ -1,73 +1,29 @@
 ﻿
 
 
-var speak = new Array( );
-var jokes = new Array( );
-jokes[1]="I saw what you did over there. I’ve got eyes in the back of my head. Just kidding, only two realistically placed robotic eyes";
-jokes[2]="I can’t believe my eyes! Because I am not programmed to process human emotions such as surprise.";
-jokes[3]="What did the sailor turned ophthalmology student say to his professor? Eye, eye, captain.";
-jokes[4]="These jokes keep getting cornea and cornea.";
-jokes[5]="What do you call a deer with no eyes? No-eye-deer.";
-jokes[6]="Why did the phone wear glasses? Because it lost all of its contacts. ";
-/*jokes[7]="Why did the phone wear glasses? Because it lost all of its contacts";
-jokes[8]="I can’t believe my eyes! Because I am not programmed to process human emotions such as surprise.";
-jokes[9]="Did you hear about that guy with ten eyes? Man, I bet he’s seen some stuff.";
-jokes[10]="Did you hear that I had to buy super expensive glasses? Yeah it’s not an eye-deal situation. a.  What do you call it when you have to buy super expensive glasses? Not eye-deal.";
-jokes[11]="Scrabble : it’s all fun and games until someone loses an “I”";
-jokes[12]="What did the sailor turned ophthalmology student say to his professor? Eye, eye, captain.";
-jokes[13]="These jokes keep getting cornea and cornea.";
-jokes[14]="You know your vision’s bad when your visual acuity was measured at 20/70 and you didn’t even see it coming.";
-jokes[15]="If you want to dress as a cyclops for Halloween, you should keep one eye out for an authentic costume design";
-jokes[16]="What do ophthalmologists like to get for Halloween? Eye candy.";
-jokes[17]="Where did the eye doctor keep all his kittens? On Cat-A-Racks!";
-jokes[18]="What do you call a deer with no eyes? No-eye-deer.";
-jokes[19]="Why did the phone wear glasses? Because it lost all of its contacts. ";
-jokes[20]="Why do optometrists live so long? They dilate.  ";*/
-function GetJoke(){
-    var temp=Math.floor((Math.random() * 7) + 1);
-    PlaySpeech(jokes[temp]);
-}
+        var speak = new Array( );
+        var jokes = new Array( );
+        jokes[1]="I saw what you did over there. I’ve got eyes in the back of my head. Just kidding, only two realistically placed robotic eyes";
+        jokes[2]="I can’t believe my eyes! Because I am not programmed to process human emotions such as surprise.";
+        jokes[3]="What did the sailor turned ophthalmology student say to his professor? Eye, eye, captain.";
+        jokes[4]="These jokes keep getting cornea and cornea.";
+        jokes[5]="What do you call a deer with no eyes? No-eye-deer.";
+        jokes[6]="Why did the phone wear glasses? Because it lost all of its contacts. ";
+        /*jokes[7]="Why did the phone wear glasses? Because it lost all of its contacts";
+        jokes[8]="I can’t believe my eyes! Because I am not programmed to process human emotions such as surprise.";
+        jokes[9]="Did you hear about that guy with ten eyes? Man, I bet he’s seen some stuff.";
+        jokes[10]="Did you hear that I had to buy super expensive glasses? Yeah it’s not an eye-deal situation. a.  What do you call it when you have to buy super expensive glasses? Not eye-deal.";
+        jokes[11]="Scrabble : it’s all fun and games until someone loses an “I”";
+        jokes[12]="What did the sailor turned ophthalmology student say to his professor? Eye, eye, captain.";
+        jokes[13]="These jokes keep getting cornea and cornea.";
+        jokes[14]="You know your vision’s bad when your visual acuity was measured at 20/70 and you didn’t even see it coming.";
+        jokes[15]="If you want to dress as a cyclops for Halloween, you should keep one eye out for an authentic costume design";
+        jokes[16]="What do ophthalmologists like to get for Halloween? Eye candy.";
+        jokes[17]="Where did the eye doctor keep all his kittens? On Cat-A-Racks!";
+        jokes[18]="What do you call a deer with no eyes? No-eye-deer.";
+        jokes[19]="Why did the phone wear glasses? Because it lost all of its contacts. ";
+        jokes[20]="Why do optometrists live so long? They dilate.  ";*/
 
-var initialJokeTime=setTimeout(GetJoke,30000);
-
-$(document).click(function(event) {
-    clearTimeout( initialJokeTime );
-    initialJokeTime=setTimeout(GetJoke,120000);
-});
-
-function LanguageChange(lang)
-{
-    if(lang === "english")
-    {
-        window.external.ChangeLanguage("en-us");
-        eraseCookie("CurrentLanguage");
-        writeCookie("CurrentLanguage", "English", 30);
-        document.getElementById("btn_english").style.backgroundColor = "#ffffff";
-        document.getElementById("btn_english").style.color = "#FF6600";
-        document.getElementById("btn_spanish").style.backgroundColor = "#FF6600";
-        document.getElementById("btn_spanish").style.color = "#ffffff";
-
-        
-        // document.getElementById("vote-title").innerHTML = "Vote for who will win?";
-
-        speak[0] = "Learn about our great healthcare offerings";
-        speak[1] = "Find your way around the terminal.";
-        speak[2] = "Here are some ways to get you where you want to go!";
-        speak[3] = "Enjoy some food at our restaurants.";
-        speak[4] = "Take some time to shop at our great stores.";
-        speak[5] = "Find out more features our airport offers.";
-        speak[6] = "Press the button on my screen and strike a pose!";
-        speak[7] = "Say Cheese! You are about to become a robot.";
-        speak[8] = "Click a Song Below to Make the Robot Dance";
-        
-
-    }
-    else if (lang === "spanish")
-    {
-       
-    }
-
-}
         speak[0] = "Novartis is seeing opportunity in ophthalmology ";
         speak[1] = "Novartis is committed to finding the right solution for you.";
         speak[2] = "Novartis has pioneered treatments for many retinal diseases.";
@@ -83,7 +39,6 @@ function FC_ContentsCall(strContentsName, strLanguage)
 {
    // alert(strContentsName);
     
-   
     switch (strContentsName)
     {
         case "Welcome":
@@ -111,7 +66,7 @@ function FC_ContentsCall(strContentsName, strLanguage)
             location.href = "Contents/Selfie/index.html";
             break;
         case "Avatar":
-            PlaySpeech(speak[7]);
+            //ssPlaySpeech(speak[7]);
             location.href = "Contents/RobotAvatar/index.htm";
             break;
         case "Dance":
@@ -128,13 +83,10 @@ function FC_ContentsCall(strContentsName, strLanguage)
 
 
 
-
-
 function OnUserApproached()
 {
-    PlaySpeech("Hello, welcome to the BWl Airport. Please press a button on my screen to begin.");
+    //PlaySpeech("Hello, welcome to the BWl Airport. Please press a button on my screen to begin.");
 }
-
 
 
 function ShowPopup(){
@@ -157,8 +109,6 @@ $(document).ready(function(){
     $('.get-started').click(function(){
         $('.welcome-text, .get-started, footer').hide();
         $('.navigation').show();
-
-
         
     });
     $('.close-menu').click(function(){
