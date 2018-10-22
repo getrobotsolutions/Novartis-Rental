@@ -1,7 +1,4 @@
-﻿
-
-
-        var speak = new Array( );
+﻿   
         var jokes = new Array( );
         jokes[1]="I saw what you did over there. I’ve got eyes in the back of my head. Just kidding, only two realistically placed robotic eyes";
         jokes[2]="I can’t believe my eyes! Because I am not programmed to process human emotions such as surprise.";
@@ -24,6 +21,7 @@
         jokes[19]="Why did the phone wear glasses? Because it lost all of its contacts. ";
         jokes[20]="Why do optometrists live so long? They dilate.  ";*/
 
+        var speak = new Array( );
         speak[0] = "Novartis is seeing opportunity in ophthalmology ";
         speak[1] = "Novartis is committed to finding the right solution for you.";
         speak[2] = "Novartis has pioneered treatments for many retinal diseases.";
@@ -111,6 +109,10 @@ $(document).ready(function(){
         $('.navigation').show();
         
     });
+    if (readCookie("NavigationState")) {
+        $('.welcome-text, .get-started, footer').hide();
+        $('.navigation').show();
+    }
     $('.close-menu').click(function(){
         $('.navigation').hide();
         $('.welcome-text, .get-started, footer').show();
