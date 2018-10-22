@@ -257,8 +257,8 @@ function SendEmail()
     // 메일 전송에 필요한 정보
     var addr = message;
     //var addr = "paul@robotaisolutions.com";
-    var subject = "Welcome to San Antonio Airport.";
-    var body = "Email : " + message;
+    var subject = "Nice to see you at the Novartis Booth!";
+    var body = "Email : " + message * "</br>Here’s the photo I took of you at the Novartis Booth. I hope you enjoyed exploring the booth and learning more about Novartis.";
     //var mail_server = "smtp.gmail.com";
     //var mail_addr_sender = "ict.muscatairport@gmail.com";
     //var pswd = "123456789K";

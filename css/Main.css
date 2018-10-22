@@ -5,7 +5,7 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
 @font-face {
     font-family: Myriadpro;
-    src: url(Fonts/MyriadPro-Cond.otf);
+    src: url('Fonts/MyriadPro Regular.otf');
 }
 a{
 	color: white;
@@ -18,7 +18,7 @@ body{
 	width: 1080px;
 	height: 1920px;
 	overflow: hidden;
-	/*font-family: 'Myriadpro' !important;*/
+	font-family: Myriadpro;
 	color: #ffffff;
 }
 
@@ -119,6 +119,7 @@ footer {
 }
 .navigation-icon{
 	margin: 30px;
+	min-height: 225px;
 }
 #myCarousel{
 
