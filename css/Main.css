@@ -3,7 +3,10 @@
 
 @import url('https://fonts.googleapis.com/css?family=Orbitron');
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
-
+@font-face {
+    font-family: Myriadpro;
+    src: url(Fonts/MyriadPro-Cond.otf);
+}
 a{
 	color: white;
 }
@@ -14,8 +17,8 @@ body{
 	background-repeat: no-repeat;
 	width: 1080px;
 	height: 1920px;
-	//overflow: hidden;
-	font-family: 'Source Sans Pro', sans-serif;
+	overflow: hidden;
+	/*font-family: 'Myriadpro' !important;*/
 	color: #ffffff;
 }
 

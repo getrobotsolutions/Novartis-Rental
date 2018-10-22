@@ -1,0 +1,1027 @@
+/* ========================================== */
+/* --- gotham fonts --- */
+@font-face {
+  font-family: 'Gotham-Bold';
+  src: url("../assets/fonts/hinted-Gotham-Bold.eot");
+  src: url("../assets/fonts/hinted-Gotham-Bold.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/hinted-Gotham-Bold.woff2") format("woff2"), url("../assets/fonts/hinted-Gotham-Bold.woff") format("woff"), url("../assets/fonts/hinted-Gotham-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Gotham-Medium';
+  src: url("../assets/fonts/hinted-Gotham-Medium.eot");
+  src: url("../assets/fonts/hinted-Gotham-Medium.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/hinted-Gotham-Medium.woff2") format("woff2"), url("../assets/fonts/hinted-Gotham-Medium.woff") format("woff"), url("../assets/fonts/hinted-Gotham-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Gotham-Light';
+  src: url("../assets/fonts/hinted-Gotham-Light.eot");
+  src: url("../assets/fonts/hinted-Gotham-Light.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/hinted-Gotham-Light.woff2") format("woff2"), url("../assets/fonts/hinted-Gotham-Light.woff") format("woff"), url("../assets/fonts/hinted-Gotham-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Gotham-Light-Italic';
+  src: url("../assets/fonts/hinted-Gotham-LightItalic.eot");
+  src: url("../assets/fonts/hinted-Gotham-LightItalic.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/hinted-Gotham-LightItalic.woff2") format("woff2"), url("../assets/fonts/hinted-Gotham-LightItalic.woff") format("woff"), url("../assets/fonts/hinted-Gotham-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Gotham-Book';
+  src: url("../assets/fonts/hinted-Gotham-Book.eot");
+  src: url("../assets/fonts/hinted-Gotham-Book.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/hinted-Gotham-Book.woff2") format("woff2"), url("../assets/fonts/hinted-Gotham-Book.woff") format("woff"), url("../assets/fonts/hinted-Gotham-Book.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Gotham-Condenced-Bold';
+  src: url("../assets/fonts/hinted-GothamCondensed-Bold.eot");
+  src: url("../assets/fonts/hinted-GothamCondensed-Bold.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/hinted-GothamCondensed-Bold.woff2") format("woff2"), url("../assets/fonts/hinted-GothamCondensed-Bold.woff") format("woff"), url("../assets/fonts/hinted-GothamCondensed-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+
+/* --- Myriad Pro fonts --- */
+@font-face {
+  font-family: 'Myriad-Pro';
+  src: url("../assets/fonts/hinted-MyriadPro-Regular.eot");
+  src: url("../assets/fonts/hinted-MyriadPro-Regular.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/hinted-MyriadPro-Regular.woff2") format("woff2"), url("../assets/fonts/hinted-MyriadPro-Regular.woff") format("woff"), url("../assets/fonts/hinted-MyriadPro-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Myriad-Pro-Bold';
+  src: url("../assets/fonts/hinted-MyriadPro-Bold.eot");
+  src: url("../assets/fonts/hinted-MyriadPro-Bold.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/hinted-MyriadPro-Bold.woff2") format("woff2"), url("../assets/fonts/hinted-MyriadPro-Bold.woff") format("woff"), url("../assets/fonts/hinted-MyriadPro-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Myriad-Pro-Italic';
+  src: url("../assets/fonts/hinted-MyriadPro-It.eot");
+  src: url("../assets/fonts/hinted-MyriadPro-It.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/hinted-MyriadPro-It.woff2") format("woff2"), url("../assets/fonts/hinted-MyriadPro-It.woff") format("woff"), url("../assets/fonts/hinted-MyriadPro-It.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic; }
+
+/* --- News Gothic MT font --- */
+@font-face {
+  font-family: 'News-Gothic-MT';
+  src: url("../assets/fonts/hinted-GothamCondensed-Bold.eot");
+  src: url("../assets/fonts/hinted-GothamCondensed-Bold.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/hinted-GothamCondensed-Bold.woff2") format("woff2"), url("../assets/fonts/hinted-GothamCondensed-Bold.woff") format("woff"), url("../assets/fonts/hinted-GothamCondensed-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  vertical-align: baseline;
+  background: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: transparent;
+  font-size: 20px; }
+
+:focus {
+  outline: none; }
+
+::-moz-focus-inner {
+  border: 0; }
+
+img {
+  display: block; }
+
+ul, ol, li {
+  list-style: none; }
+
+body {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border: 0 none;
+  outline: 0;
+  padding: 0;
+  margin: 0; }
+
+body {
+  -webkit-animation-delay: 0.1s;
+  -webkit-animation-name: fontfix;
+  -webkit-animation-duration: 0.1s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear; }
+
+@-webkit-keyframes fontfix {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 1; } }
+
+sub, sup {
+  font-size: 70%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  /* Move the superscripted text up */
+  top: -0.5em; }
+  sup.reg {
+    font-size: 100%;
+    top: -0.25em; }
+
+h1 sup, h2 sup, h3 sup, h4 sup, h5 sup {
+  font-size: 60%;
+  top: -0.70em;
+  font-weight: normal; }
+  h1 sup.reg, h2 sup.reg, h3 sup.reg, h4 sup.reg, h5 sup.reg {
+    font-size: 90%;
+    top: -0.3em; }
+
+em, strong {
+  font-face: inherit;
+  font-size: inherit;
+  color: inherit; }
+
+span {
+  font-face: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit; }
+
+/* ------------ Constants ----------------*/
+/*-----------------------------------------*/
+/* ------------ Brand Hue Values ----------------*/
+/*----------------------------------------------*/
+/* ========================================== */
+/* ------------ Bsse Hue Values ----------------*/
+/*----------------------------------------------*/
+/* --- shades of grey --- */
+/* ---- cool colors --- */
+/* --- warm colors ---- */
+/* ---------Functional Color Variables -----------*/
+/*------------------------------------------------*/
+/* -- background colors -- */
+/* -- fill colors -- */
+/* -- text colors -- */
+/* -- text colors -- */
+/* Overwrite Vars*/
+/*Content specific*/
+body {
+  overflow: hidden; }
+
+.container {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  width: 1080px;
+  height: 1920px;
+  background-image: url("../assets/images/azopt/bg/bg_crumpled.png");
+  overflow: hidden;
+  font-family: "Myriad-Pro", sans-serif; }
+  .container .serious-buisness {
+    display: none; }
+  .container > div {
+    position: relative; }
+    .container > div .scene {
+      position: absolute;
+      width: 100%;
+      padding-left: 144px;
+      padding-top: 200px;
+      height: 1920px; }
+      .container > div .scene.scene-01 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: transparent; }
+      .container > div .scene.scene-02 {
+        position: absolute;
+        top: 0;
+        left: 1080px;
+        background: transparent; }
+      .container > div .scene.scene-03 {
+        position: absolute;
+        top: 0;
+        left: 2160px;
+        background: transparent; }
+      .container > div .scene h1.headline {
+        position: absolute;
+        left: 144px;
+        top: 1rem;
+        width: 65.5%;
+        padding: 2rem 1.5rem;
+        text-align: left; }
+        .container > div .scene h1.headline strong {
+          font-size: 1.5rem;
+          line-height: 1.8rem;
+          font-weight: 700; }
+      .container > div .scene .scene-content {
+        padding: 30px; }
+        .container > div .scene .scene-content h2, .container > div .scene .scene-content h3, .container > div .scene .scene-content h4, .container > div .scene .scene-content h5 {
+          width: 100%;
+          text-align: center;
+          font-size: 1.5rem;
+          color: #03649b; }
+          .container > div .scene .scene-content h2 em, .container > div .scene .scene-content h3 em, .container > div .scene .scene-content h4 em, .container > div .scene .scene-content h5 em {
+            color: #ec7d30; }
+        .container > div .scene .scene-content h3 {
+          width: 100%;
+          text-align: center; }
+  .container header.titlebar {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: auto;
+    width: 100%;
+    height: 200px;
+    padding: 30px;
+    padding-left: 144px;
+    background-color: rgba(255, 255, 255, 0.5);
+    background-image: url("../assets/images/azopt/brand/azopt_logo_200.png");
+    background-position: 96% 50%;
+    background-repeat: no-repeat;
+    background-size: auto 64%;
+    pointer-events: none; }
+    .container header.titlebar .headline {
+      padding: 30px;
+      max-width: 70%; }
+      .container header.titlebar .headline h1 {
+        padding: 0;
+        color: #03649b;
+        font-family: "Gotham-Bold", Helvetica, ariel, arial, sans-serif;
+        font-size: 1.1rem;
+        line-height: 1.8rem; }
+        .container header.titlebar .headline h1 strong {
+          font-size: 1.5rem;
+          line-height: 1.8rem;
+          font-weight: 700; }
+  .container #loadscreen {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 800;
+    background-image: url("../assets/images/azopt/hero/hero_loadpage.png");
+    background-color: #03649b;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 100% auto; }
+    .container #loadscreen .splash {
+      position: relative;
+      width: 100%;
+      height: auto; }
+      .container #loadscreen .splash .splash-copy {
+        display: block;
+        position: absolute; }
+        .container #loadscreen .splash .splash-copy h1 {
+          color: #03649b;
+          font-size: 2rem; }
+    .container #loadscreen .title-page {
+      background-position: 50% 96%;
+      background-repeat: no-repeat;
+      background-size: auto; }
+      .container #loadscreen .title-page button.continue {
+        height: 15rem;
+        background-position: 50% 45%; }
+      .container #loadscreen .title-page p.link-style.isi-link-landing-enter {
+        color: white; }
+    .container #loadscreen .title-page {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 50%;
+      padding: 2.25rem 1.9rem;
+      background-color: #ec7d30;
+      background-image: url("../assets/images/azopt/brand/brand_azopt_loadscreen-footer.png");
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      background-size: 100% auto; }
+    .container #loadscreen button.continue {
+      margin: 0 auto;
+      height: 7rem;
+      width: 100%;
+      background-image: url("../assets/images/azopt/btn/btn_title_continue.png");
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: auto; }
+  .container .brand-footer {
+    padding: 30px; }
+    .container .brand-footer h4 {
+      color: #232323;
+      font-size: 0.9rem;
+      font-family: "News-Gothic-MT", sans-serif; }
+    .container .brand-footer ul.flex-footer {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items: flex-end;
+      align-content: space-between; }
+      .container .brand-footer ul.flex-footer li {
+        flex-grow: 1;
+        color: #232323;
+        font-size: 0.9rem;
+        font-family: "News-Gothic-MT", sans-serif; }
+        .container .brand-footer ul.flex-footer li:first-of-type {
+          flex-grow: 2;
+          flex-basis: 33%; }
+  .container #exit-pane {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+    background-color: transparent;
+    text-indent: -9999px; }
+  .container span.link-style,
+  .container p.link-style
+em.link-style {
+    color: #ec7d30;
+    text-decoration: underline; }
+  .container .significant-phrase {
+    white-space: nowrap;
+    display: inline-block; }
+  .container .sm-cap {
+    font-size: 80%; }
+
+.container .menu-bar {
+  display: block;
+  position: fixed;
+  width: 144px;
+  height: auto;
+  top: 0;
+  left: 0;
+  right: 86.66667%;
+  bottom: 38.75%;
+  bottom: 38.75%;
+  right: 86.6666666666667%;
+  color: white;
+  font-size: 40px;
+  vertical-align: bottom; }
+  .container .menu-bar .brand {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10rem;
+    text-align: center;
+    padding: 40px 15px;
+    font-size: 25px;
+    text-indent: -9999px;
+    background-color: #ec7d30;
+    background-image: url("../assets/images/azopt/brand/sidebar_with_pkg.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: top center; }
+  .container .menu-bar nav {
+    width: 100%;
+    height: 71%;
+    vertical-align: bottom;
+    background-color: #ec7d30; }
+  .container .menu-bar ul {
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 10rem;
+    width: 100%;
+    height: auto;
+    padding-bottom: 1em;
+    vertical-align: bottom; }
+    .container .menu-bar ul li {
+      width: 144px; }
+      .container .menu-bar ul li button {
+        pointer-events: all;
+        width: 100%;
+        height: 5rem;
+        margin-bottom: 10px;
+        color: white;
+        font-size: 20px;
+        background-size: auto;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-color: transparent; }
+        .container .menu-bar ul li button.btn-menu-tgl {
+          height: 7rem; }
+          .container .menu-bar ul li button.btn-menu-tgl.active {
+            background-image: url("../assets/images/azopt/btn/btn_menu_close.png");
+            background-position: center center;
+            text-indent: -9999px; }
+            .container .menu-bar ul li button.btn-menu-tgl.active .caption {
+              display: inline-block;
+              text-indent: -9999px; }
+          .container .menu-bar ul li button.btn-menu-tgl .icon {
+            display: block;
+            font-size: 110px;
+            line-height: 0.66em;
+            vertical-align: top; }
+          .container .menu-bar ul li button.btn-menu-tgl .caption {
+            height: 1rem; }
+        .container .menu-bar ul li button.btn-prev {
+          background-image: url("../assets/images/azopt/icons/arrow_white_back.svg");
+          text-indent: -9999px;
+          margin-bottom: 0px;
+          background-size: 50% auto; }
+        .container .menu-bar ul li button.btn-next {
+          background-image: url("../assets/images/azopt/icons/arrow_white.svg");
+          text-indent: -9999px;
+          background-size: 50% auto; }
+  .container .menu-bar button.btn-isi-tgl {
+    pointer-events: all;
+    display: block;
+    position: absolute;
+    height: 10rem;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: #FFF;
+    font-size: 1.1rem; }
+    .container .menu-bar button.btn-isi-tgl span {
+      position: absolute;
+      left: 0;
+      bottom: 1rem;
+      width: 100%;
+      height: 9.5rem;
+      opacity: 1.0;
+      -webkit-transition: all 1.5s ease;
+      -moz-transition: all 1.5s ease;
+      -o-transition: all 1.5s ease;
+      -ms-transition: all 1.5s ease;
+      transition: all 1.5s ease;
+      text-align: left;
+      background-color: black; }
+      .container .menu-bar button.btn-isi-tgl span em {
+        display: block;
+        font-size: 2rem;
+        line-height: 1rem; }
+      .container .menu-bar button.btn-isi-tgl span.open {
+        position: absolute;
+        padding-top: 1.9rem;
+        padding-left: 1rem;
+        width: 100%;
+        opacity: 1.0; }
+      .container .menu-bar button.btn-isi-tgl span.closed {
+        position: absolute;
+        padding-top: 4rem;
+        opacity: 0;
+        text-align: center; }
+    .container .menu-bar button.btn-isi-tgl.active span.open {
+      position: absolute;
+      opacity: 0; }
+    .container .menu-bar button.btn-isi-tgl.active span.closed {
+      opacity: 1.0; }
+
+.container .menu-drawer {
+  pointer-events: all;
+  display: block;
+  position: absolute;
+  width: 450px;
+  height: auto;
+  top: 0;
+  left: -500px;
+  bottom: 38.75%;
+  padding: 41rem 1rem 1rem 0;
+  color: #FFF;
+  font-size: 40px;
+  background-color: #03649b;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  vertical-align: bottom; }
+  .container .menu-drawer.active {
+    left: 144px; }
+  .container .menu-drawer nav {
+    position: relative;
+    display: block;
+    width: 100%;
+    vertical-align: bottom; }
+    .container .menu-drawer nav ul {
+      width: 100%; }
+      .container .menu-drawer nav ul li {
+        width: 100%; }
+        .container .menu-drawer nav ul li button {
+          pointer-events: all;
+          margin-left: -1px;
+          width: 100%;
+          border-left: 1rem solid #03649b;
+          color: white; }
+          .container .menu-drawer nav ul li button span.caption {
+            display: inline-block;
+            width: 100%;
+            padding: 1rem 0.5rem;
+            text-align: left;
+            font-family: "Gotham-Bold", Helvetica, ariel, arial, sans-serif;
+            font-size: 1rem;
+            text-transform: uppercase;
+            font-weight: bold; }
+          .container .menu-drawer nav ul li button.active {
+            border-left: 1rem solid #03649b; }
+
+.container .isi-drawer-sheith {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 28.5416666666667%;
+  right: 86.6666666666667%;
+  width: auto;
+  height: auto;
+  padding: 0;
+  background-color: transparent;
+  text-align: right; }
+  .container .isi-drawer-sheith button.btn-isi-tgl {
+    pointer-events: all;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 10rem;
+    color: #FFF;
+    font-size: 1.1rem; }
+    .container .isi-drawer-sheith button.btn-isi-tgl span {
+      position: absolute;
+      left: 0;
+      bottom: 1rem;
+      width: 100%;
+      height: 9.5rem;
+      opacity: 1.0;
+      -webkit-transition: all 1.5s ease;
+      -moz-transition: all 1.5s ease;
+      -o-transition: all 1.5s ease;
+      -ms-transition: all 1.5s ease;
+      transition: all 1.5s ease;
+      text-align: left;
+      background-color: black; }
+      .container .isi-drawer-sheith button.btn-isi-tgl span em {
+        display: block;
+        font-size: 2rem;
+        line-height: 1rem; }
+      .container .isi-drawer-sheith button.btn-isi-tgl span.open {
+        position: absolute;
+        padding-top: 1.9rem;
+        padding-left: 1rem;
+        width: 100%;
+        opacity: 1.0; }
+      .container .isi-drawer-sheith button.btn-isi-tgl span.closed {
+        position: absolute;
+        padding-top: 4rem;
+        opacity: 0;
+        text-align: center; }
+    .container .isi-drawer-sheith button.btn-isi-tgl.active span.open {
+      position: absolute;
+      opacity: 0; }
+    .container .isi-drawer-sheith button.btn-isi-tgl.active span.closed {
+      opacity: 1.0; }
+
+.container nav.scene-one ul li button.btn-scene-01 {
+  border-left: 1rem solid #ec7d30;
+  color: #ec7d30; }
+
+.container nav.scene-two ul li button.btn-scene-02 {
+  border-left: 1rem solid #ec7d30;
+  color: #ec7d30; }
+
+.container nav.scene-three ul li button.btn-scene-03 {
+  border-left: 1rem solid #ec7d30;
+  color: #ec7d30; }
+
+body #container .isi-wrapper .isi-content {
+  display: block;
+  text-align: left;
+  padding: 0.5rem; }
+  body #container .isi-wrapper .isi-content h2, body #container .isi-wrapper .isi-content h3, body #container .isi-wrapper .isi-content p.add-info {
+    font-family: "Gotham-Bold", Helvetica, ariel, arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.12rem;
+    margin-bottom: 0.33rem;
+    text-align: left; }
+    body #container .isi-wrapper .isi-content h2 em, body #container .isi-wrapper .isi-content h3 em, body #container .isi-wrapper .isi-content p.add-info em {
+      font-family: "Gotham-Book", Helvetica, ariel, arial, sans-serif;
+      font-style: normal; }
+  body #container .isi-wrapper .isi-content h2 {
+    margin-bottom: 0.33rem; }
+  body #container .isi-wrapper .isi-content p, body #container .isi-wrapper .isi-content a, body #container .isi-wrapper .isi-content em {
+    font-family: "Gotham-Light", Helvetica, ariel, arial, sans-serif;
+    font-size: 0.92rem;
+    line-height: 1.25em;
+    margin-bottom: 30px;
+    text-align: left; }
+  body #container .isi-wrapper .isi-content a, body #container .isi-wrapper .isi-content p.link-style {
+    color: #ec7d30;
+    font-family: "Gotham-Medium", Helvetica, ariel, arial, sans-serif;
+    font-size: 0.92rem;
+    line-height: 1.33em; }
+  body #container .isi-wrapper .isi-content em {
+    font-family: "Gotham-Light-Italic", Helvetica, ariel, arial, sans-serif; }
+  body #container .isi-wrapper .isi-content .references {
+    padding-top: 0.33rem;
+    text-align: left;
+    color: #232323;
+    font-family: "Myriad-Pro", sans-serif;
+    font-size: 0.8rem;
+    line-height: 1.25em; }
+    body #container .isi-wrapper .isi-content .references h4, body #container .isi-wrapper .isi-content .references strong {
+      display: inline-block;
+      width: auto;
+      color: #232323;
+      font-family: "Myriad-Pro-Bold", sans-serif;
+      font-size: 0.8rem;
+      line-height: 1.25em;
+      font-weight: 700; }
+    body #container .isi-wrapper .isi-content .references h4 {
+      float: left;
+      padding-right: 0.25rem; }
+    body #container .isi-wrapper .isi-content .references p, body #container .isi-wrapper .isi-content .references em {
+      color: #232323;
+      font-family: "Myriad-Pro", sans-serif;
+      font-size: 0.8rem;
+      line-height: 1.25em; }
+    body #container .isi-wrapper .isi-content .references em {
+      font-family: "Myriad-Pro-Italic", sans-serif; }
+
+body #container .isi-wrapper.isi-partial {
+  position: relative;
+  text-align: left; }
+  body #container .isi-wrapper.isi-partial h2, body #container .isi-wrapper.isi-partial h3, body #container .isi-wrapper.isi-partial p.add-info {
+    color: #03649b;
+    text-align: left; }
+  body #container .isi-wrapper.isi-partial p, body #container .isi-wrapper.isi-partial a {
+    color: #232323;
+    margin-bottom: 0.41rem; }
+  body #container .isi-wrapper.isi-partial em {
+    color: #03649b; }
+  body #container .isi-wrapper.isi-partial p.link-style {
+    color: #ec7d30;
+    text-decoration: underline; }
+  body #container .isi-wrapper.isi-partial .references {
+    padding-top: 0.33rem;
+    text-align: left;
+    color: #232323;
+    font-family: "Myriad-Pro", sans-serif;
+    font-size: 0.8rem;
+    line-height: 1.25em; }
+    body #container .isi-wrapper.isi-partial .references h4, body #container .isi-wrapper.isi-partial .references strong {
+      display: inline-block;
+      width: auto;
+      color: #232323;
+      font-family: "Myriad-Pro-Bold", sans-serif;
+      font-size: 0.8rem;
+      line-height: 1.25em;
+      font-weight: 700; }
+    body #container .isi-wrapper.isi-partial .references h4 {
+      float: left;
+      padding-right: 0.25rem; }
+    body #container .isi-wrapper.isi-partial .references p {
+      color: #232323;
+      font-family: "Myriad-Pro", sans-serif;
+      font-size: 0.8rem;
+      line-height: 1.25em; }
+    body #container .isi-wrapper.isi-partial .references em {
+      color: #232323;
+      font-family: "Myriad-Pro-Italic", sans-serif; }
+
+body #container .isi-wrapper.isi-drawer {
+  position: absolute;
+  top: auto;
+  left: auto;
+  bottom: 38.75%;
+  right: 86.6666666666667%;
+  width: 88%;
+  height: auto;
+  min-height: 90%;
+  padding: 12px 53px 99px 199px;
+  background-color: black;
+  text-align: right;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+  body #container .isi-wrapper.isi-drawer h2, body #container .isi-wrapper.isi-drawer h3 {
+    color: white;
+    margin-bottom: 0.35rem; }
+  body #container .isi-wrapper.isi-drawer p, body #container .isi-wrapper.isi-drawer a {
+    color: white;
+    margin-bottom: 0.7rem; }
+  body #container .isi-wrapper.isi-drawer .isi-content {
+    width: 100%;
+    vertical-align: bottom;
+    padding: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
+  body #container .isi-wrapper.isi-drawer.active {
+    top: 0;
+    bottom: 0;
+    right: 15%;
+    padding: 2rem 2.65rem 4rem 10.75rem; }
+
+body #container .isi-wrapper.isi-cover {
+  position: relative;
+  width: auto;
+  height: auto; }
+  body #container .isi-wrapper.isi-cover h2 {
+    margin-top: 0.75rem; }
+  body #container .isi-wrapper.isi-cover h2, body #container .isi-wrapper.isi-cover h3 {
+    color: #03649b;
+    text-align: left;
+    margin-bottom: 0.22rem; }
+  body #container .isi-wrapper.isi-cover h2 {
+    margin-bottom: 0.66rem; }
+  body #container .isi-wrapper.isi-cover p, body #container .isi-wrapper.isi-cover a {
+    color: white;
+    line-height: 1.25em;
+    margin-bottom: 0.26rem; }
+  body #container .isi-wrapper.isi-cover a, body #container .isi-wrapper.isi-cover p.link-style {
+    position: relative;
+    display: inline-block;
+    z-index: 999;
+    margin-bottom: 0;
+    padding: 0.1rem 4rem 0.6rem 0;
+    color: #ec7d30;
+    font-family: "Gotham-Medium", Helvetica, ariel, arial, sans-serif;
+    text-decoration: underline; }
+  body #container .isi-wrapper.isi-cover .references {
+    color: white; }
+    body #container .isi-wrapper.isi-cover .references h4, body #container .isi-wrapper.isi-cover .references strong, body #container .isi-wrapper.isi-cover .references p, body #container .isi-wrapper.isi-cover .references em {
+      color: white; }
+
+.container .menus {
+  position: relative;
+  height: 100%;
+  width: auto;
+  overflow: visible;
+  pointer-events: none;
+  opacity: 0; }
+
+.container .titlebar {
+  opacity: 0; }
+
+.container .menu-bar {
+  display: block; }
+
+.container #content-wrapper {
+  opacity: 0; }
+
+.container .btn-prev {
+  opacity: 0.6; }
+
+.container #exit-pane {
+  opacity: 0;
+  display: none; }
+
+#container.container #content-wrapper .scene {
+  /* ==== SCENE TWO ==== */
+  /* ==== SCENE TWO ==== */ }
+  #container.container #content-wrapper .scene .scene-content {
+    padding-top: 0.1rem;
+    padding-right: 2.5rem; }
+  #container.container #content-wrapper .scene.scene-01 .chart-hero {
+    text-align: center; }
+    #container.container #content-wrapper .scene.scene-01 .chart-hero h1, #container.container #content-wrapper .scene.scene-01 .chart-hero h2 {
+      display: block;
+      color: #03649b;
+      font-family: "Gotham-Bold", Helvetica, ariel, arial, sans-serif;
+      font-size: 1.4rem;
+      line-height: 1.6rem;
+      margin-bottom: 30px; }
+      #container.container #content-wrapper .scene.scene-01 .chart-hero h1 strong, #container.container #content-wrapper .scene.scene-01 .chart-hero h2 strong {
+        color: #ec7d30;
+        font-family: "Gotham-Bold", Helvetica, ariel, arial, sans-serif;
+        font-size: 1.3rem; }
+    #container.container #content-wrapper .scene.scene-01 .chart-hero .chart {
+      display: block;
+      width: 100%;
+      height: 555px;
+      margin: 1% auto;
+      background-repeat: no-repeat;
+      background-position: center top;
+      background-size: auto; }
+      #container.container #content-wrapper .scene.scene-01 .chart-hero .chart.chart-01 {
+        background-image: url("../assets/images/azopt/charts/chart_01.png"); }
+    #container.container #content-wrapper .scene.scene-01 .chart-hero p.close {
+      font-family: "Gotham-Book", Helvetica, ariel, arial, sans-serif;
+      font-size: 1.12rem; }
+      #container.container #content-wrapper .scene.scene-01 .chart-hero p.close em {
+        font-family: "Gotham-Book-Italic", Helvetica, ariel, arial, sans-serif; }
+  #container.container #content-wrapper .scene.scene-01 p.fine {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 0.4rem 0.5rem 0.5rem;
+    font-family: "Myriad-Pro", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+    line-height: 1.25em; }
+    #container.container #content-wrapper .scene.scene-01 p.fine strong {
+      font-family: "Myriad-Pro-Bold", sans-serif;
+      font-size: 0.8rem;
+      font-weight: 700; }
+    #container.container #content-wrapper .scene.scene-01 p.fine em {
+      font-family: "Myriad-Pro", sans-serif;
+      padding-right: 0.15rem; }
+  #container.container #content-wrapper .scene.scene-01 .isi-wrapper {
+    padding-top: 0.5rem; }
+  #container.container #content-wrapper .scene.scene-02 {
+    position: absolute;
+    top: 0;
+    left: 1080px;
+    background: transparent; }
+    #container.container #content-wrapper .scene.scene-02 h1, #container.container #content-wrapper .scene.scene-02 h2 {
+      font-family: "Gotham-Bold", Helvetica, ariel, arial, sans-serif;
+      font-size: 1.4rem;
+      line-height: 1.6rem; }
+      #container.container #content-wrapper .scene.scene-02 h1 strong, #container.container #content-wrapper .scene.scene-02 h2 strong {
+        color: #ec7d30;
+        font-family: "Gotham-Bold", Helvetica, ariel, arial, sans-serif;
+        font-size: 1.4rem;
+        line-height: 1.6rem; }
+    #container.container #content-wrapper .scene.scene-02 .chart-hero .chart {
+      display: block;
+      width: 100%;
+      height: 580px;
+      margin: 1% auto;
+      background-repeat: no-repeat;
+      background-position: 48% 60%;
+      background-size: auto; }
+      #container.container #content-wrapper .scene.scene-02 .chart-hero .chart.chart-02 {
+        background-image: url("../assets/images/azopt/charts/chart_02.png"); }
+    #container.container #content-wrapper .scene.scene-02 p.fine {
+      display: block;
+      margin-bottom: 3rem;
+      width: 100%;
+      text-align: left;
+      padding: 0.4rem 0.5rem 0.5rem;
+      font-family: "Myriad-Pro", sans-serif;
+      font-size: 0.8rem;
+      font-weight: 700;
+      line-height: 1.25em; }
+      #container.container #content-wrapper .scene.scene-02 p.fine strong {
+        font-family: "Myriad-Pro-Bold", sans-serif;
+        font-size: 0.8rem;
+        font-weight: 700; }
+      #container.container #content-wrapper .scene.scene-02 p.fine em {
+        padding-right: 0.15rem; }
+  #container.container #content-wrapper .scene.scene-03 {
+    position: absolute;
+    top: 0;
+    left: 2160px;
+    background: transparent; }
+    #container.container #content-wrapper .scene.scene-03 h1 {
+      color: #03649b;
+      font-family: "Gotham-Bold", Helvetica, ariel, arial, sans-serif;
+      font-size: 1.66rem;
+      line-height: 1.8rem;
+      font-weight: 700; }
+    #container.container #content-wrapper .scene.scene-03 .savings-figure {
+      width: 100%;
+      height: 25rem;
+      padding: 8.5rem 2rem 2rem 22.5rem;
+      background-image: url("../assets/images/azopt/charts/orange_drop.png");
+      background-repeat: no-repeat;
+      background-position: 10.1% 0%;
+      background-size: auto;
+      text-align: left; }
+      #container.container #content-wrapper .scene.scene-03 .savings-figure h2 {
+        margin-bottom: 0.5rem;
+        font-family: "Gotham-Bold", Helvetica, ariel, arial, sans-serif;
+        font-size: 2rem;
+        text-align: left;
+        line-height: 2.2rem;
+        font-weight: 700; }
+      #container.container #content-wrapper .scene.scene-03 .savings-figure h2.copay {
+        position: absolute;
+        display: block;
+        top: 25%;
+        left: 29%;
+        font-family: "Gotham-Condenced-Bold", Helvetica, ariel, arial, sans-serif;
+        font-size: 9rem;
+        color: white;
+        font-weight: 300; }
+      #container.container #content-wrapper .scene.scene-03 .savings-figure p.strap {
+        font-size: 1.6rem;
+        text-align: left;
+        color: #03649b;
+        font-family: "Gotham-Medium", Helvetica, ariel, arial, sans-serif;
+        line-height: 2rem;
+        font-weight: 500; }
+        #container.container #content-wrapper .scene.scene-03 .savings-figure p.strap em, #container.container #content-wrapper .scene.scene-03 .savings-figure p.strap strong {
+          color: #ec7d30;
+          font-family: "Gotham-Bold", Helvetica, ariel, arial, sans-serif;
+          font-size: 1.6rem;
+          font-weight: 700;
+          font-style: normal; }
+    #container.container #content-wrapper .scene.scene-03 p.closing {
+      padding: 0.5rem 1.5rem;
+      color: #232323;
+      font-family: "Gotham-Book", Helvetica, ariel, arial, sans-serif;
+      font-size: 1.1rem;
+      line-height: 1.4rem;
+      font-weight: 300;
+      text-align: center; }
+      #container.container #content-wrapper .scene.scene-03 p.closing strong {
+        color: #ec7d30;
+        font-family: "Gotham-Bold", Helvetica, ariel, arial, sans-serif;
+        font-size: 1.1rem;
+        line-height: 1.4rem; }
+    #container.container #content-wrapper .scene.scene-03 p.terms {
+      display: block;
+      width: 100%;
+      padding: 30px;
+      text-align: left;
+      color: #232323;
+      font-family: "Myriad-Pro", sans-serif;
+      font-size: 0.8rem;
+      font-weight: 700;
+      line-height: 1.25em; }
+      #container.container #content-wrapper .scene.scene-03 p.terms strong {
+        font-family: "Myriad-Pro-Bold", sans-serif;
+        font-size: 0.8rem;
+        font-weight: 700; }
+    #container.container #content-wrapper .scene.scene-03 div.ongoing-support h3 {
+      padding: 0.5rem 1rem;
+      font-family: "Gotham-Bold", Helvetica, ariel, arial, sans-serif;
+      font-size: 1.75rem;
+      text-align: center; }
+    #container.container #content-wrapper .scene.scene-03 div.ongoing-support h4 {
+      padding: 0rem 1rem;
+      font-family: "Gotham-Medium", Helvetica, ariel, arial, sans-serif; }
+    #container.container #content-wrapper .scene.scene-03 div.ongoing-support ul {
+      padding: 2rem 2rem 1rem; }
+      #container.container #content-wrapper .scene.scene-03 div.ongoing-support ul li {
+        font-family: "Gotham-Book", Helvetica, ariel, arial, sans-serif;
+        font-size: 1.12rem;
+        color: #232323;
+        text-align: left;
+        padding-left: 7rem;
+        margin-bottom: 1.5rem;
+        background-repeat: no-repeat;
+        background-position: 5% 1%;
+        background-size: contain; }
+        #container.container #content-wrapper .scene.scene-03 div.ongoing-support ul li h4 {
+          display: inline-block;
+          width: auto;
+          font-family: "Gotham-Bold", Helvetica, ariel, arial, sans-serif;
+          font-size: 1.25rem;
+          font-weight: 700;
+          color: #232323;
+          text-align: left;
+          padding: 0; }
+        #container.container #content-wrapper .scene.scene-03 div.ongoing-support ul li.edu {
+          background-image: url("../assets/images/azopt/icons/icon_book.svg"); }
+        #container.container #content-wrapper .scene.scene-03 div.ongoing-support ul li.act {
+          background-image: url("../assets/images/azopt/icons/icon_laptop.svg"); }
+        #container.container #content-wrapper .scene.scene-03 div.ongoing-support ul li.tools {
+          background-image: url("../assets/images/azopt/icons/icon_star.svg"); }
+    #container.container #content-wrapper .scene.scene-03 p {
+      margin-bottom: 1.5rem;
+      font-family: "Gotham-Bold", Helvetica, ariel, arial, sans-serif;
+      color: #03649b; }
+      #container.container #content-wrapper .scene.scene-03 p.learn-more {
+        text-align: center;
+        font-size: 1.3rem; }
+        #container.container #content-wrapper .scene.scene-03 p.learn-more span.link-style {
+          font-size: 1.3rem;
+          text-decoration: none; }
+      #container.container #content-wrapper .scene.scene-03 p.add-info {
+        font-family: "Gotham-Bold", Helvetica, ariel, arial, sans-serif;
+        font-size: 1.1rem; }
+
+#container.container #loadscreen {
+  background-position: 50% 14%;
+  background-size: 101% auto; }
+  #container.container #loadscreen .splash {
+    top: 25.95%;
+    left: 5.6%; }
+    #container.container #loadscreen .splash .splash-copy h1 {
+      font-family: "Gotham-Light", Helvetica, ariel, arial, sans-serif;
+      font-size: 2rem; }
+      #container.container #loadscreen .splash .splash-copy h1 strong {
+        font-family: "Gotham-Bold", Helvetica, ariel, arial, sans-serif; }
+  #container.container #loadscreen .title-page {
+    background-position: 50% 96%;
+    background-repeat: no-repeat;
+    background-size: auto; }
+    #container.container #loadscreen .title-page button.continue {
+      height: 15rem;
+      background-position: 50% 45%; }
+    #container.container #loadscreen .title-page p.link-style.isi-link-landing-enter {
+      color: white; }

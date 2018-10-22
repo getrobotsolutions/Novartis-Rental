@@ -3,14 +3,14 @@
 
 var speak = new Array( );
 var jokes = new Array( );
-jokes[1]="Did you hear about that guy with ten eyes? Man, I bet he’s seen some stuff.";
-jokes[2]="Scrabble : it’s all fun and games until someone loses an “I”";
-jokes[3]="What did the sailor turned ophthalmology student say to his professor? Eye, eye, captain";
-jokes[4]="These jokes keep getting cornea and cornea";
-jokes[5]="What do ophthalmologists like to get for Halloween? Eye candy.";
-jokes[6]="What do you call a deer with no eyes? No-eye-deer.";
-jokes[7]="Why did the phone wear glasses? Because it lost all of its contacts";
-/*jokes[8]="I can’t believe my eyes! Because I am not programmed to process human emotions such as surprise.";
+jokes[1]="I saw what you did over there. I’ve got eyes in the back of my head. Just kidding, only two realistically placed robotic eyes";
+jokes[2]="I can’t believe my eyes! Because I am not programmed to process human emotions such as surprise.";
+jokes[3]="What did the sailor turned ophthalmology student say to his professor? Eye, eye, captain.";
+jokes[4]="These jokes keep getting cornea and cornea.";
+jokes[5]="What do you call a deer with no eyes? No-eye-deer.";
+jokes[6]="Why did the phone wear glasses? Because it lost all of its contacts. ";
+/*jokes[7]="Why did the phone wear glasses? Because it lost all of its contacts";
+jokes[8]="I can’t believe my eyes! Because I am not programmed to process human emotions such as surprise.";
 jokes[9]="Did you hear about that guy with ten eyes? Man, I bet he’s seen some stuff.";
 jokes[10]="Did you hear that I had to buy super expensive glasses? Yeah it’s not an eye-deal situation. a.  What do you call it when you have to buy super expensive glasses? Not eye-deal.";
 jokes[11]="Scrabble : it’s all fun and games until someone loses an “I”";
