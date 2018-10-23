@@ -1,12 +1,17 @@
 @charset "utf-8";
 /* CSS Document */
 
-@import url('https://fonts.googleapis.com/css?family=Orbitron');
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+/*@import url('https://fonts.googleapis.com/css?family=Orbitron');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');*/
 @font-face {
-    font-family: Myriadpro;
-    src: url('Fonts/MyriadPro Regular.otf');
+    font-family: MyriadproReg;
+    src: url('Fonts/MYRIADPROREGULAR.woff');
 }
+@font-face {
+    font-family: MyriadproBold;
+    src: url('Fonts/MyriadPro-Bold.woff');
+}
+
 a{
 	color: white;
 }
@@ -18,7 +23,7 @@ body{
 	width: 1080px;
 	height: 1920px;
 	overflow: hidden;
-	font-family: Myriadpro;
+	font-family: 'MyriadproReg';
 	color: #ffffff;
 }
 
@@ -78,21 +83,22 @@ nav .nav-language button {
 	font-size: 105px;
 	font-weight: bold;
 	position: absolute;
-	top: 600px;
+	top: 687px;
 	left:400px;
-	font-family: Myriadpro;
+	font-family: MyriadproBold;
 }
 .get-started{
 	position: absolute;
     background-image: url(../assets/button.png);
     background-size: contain;
     background-repeat: no-repeat;
-    width: 300px;
+    width: 350px;
     height: 100px;
     top: 1000px;
     left: 400px;
-    font-size: 54px;
+    font-size: 51px;
     padding: 13px 20px;
+    font-family: MyriadproBold;
 }
 
 
@@ -120,8 +126,12 @@ footer {
 }
 .navigation-icon{
 	margin: 30px;
-	min-height: 225px;
+	min-height: 223px;
 }
+.navigation-text{
+	font-weight: bold;
+}
+
 #myCarousel{
 
 }
