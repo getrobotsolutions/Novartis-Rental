@@ -1042,7 +1042,7 @@ body #container .isi-wrapper.isi-cover {
         #container.container #content-wrapper .scene.scene-03 div.ongoing-support ul li.act {
           background-image: url("../assets/images/travz/icons/icon_laptop.svg"); background-position: -300px; }
         #container.container #content-wrapper .scene.scene-03 div.ongoing-support ul li.tools {
-          background-image: url("../assets/images/travz/icons/icon_star.png"); background-position: -300px;}
+          background-image: url("../assets/images/travz/icons/icon_star.png"); background-position: 68px;}
     #container.container #content-wrapper .scene.scene-03 p {
       margin-bottom: 1.5rem;
       font-family: "Gotham-Bold", Helvetica, ariel, arial, sans-serif;
