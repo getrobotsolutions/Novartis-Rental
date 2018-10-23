@@ -258,7 +258,7 @@ function SendEmail()
     var addr = message;
     //var addr = "paul@robotaisolutions.com";
     var subject = "Nice to see you at the Novartis Booth!";
-    var body = "Hello.  Here’s the photo I took of you at the Novartis Booth.  I hope you enjoyed exploring our booth and learning more about Novartis.  Thanks for visiting!  Ophthal Molly, on behalf of the Novartis Team.  (This is an unattended mailbox.). Novartis Pharmaceuticals Corporation, One Health Plaza, East Hanover, NJ 07936-1080, ©2018 Novartis, 10/18, T-MNB-1364526.";
+    var body = "Hello.  Here’s the photo I took of you at the Novartis Booth.  I hope you enjoyed exploring our booth and learning more about Novartis.  Thanks for visiting!  Ophthal Molly, on behalf of the Novartis Team.  (This is an unattended mailbox.) Novartis Pharmaceuticals Corporation, One Health Plaza, East Hanover, NJ 07936-1080, ©2018 Novartis, 10/18, T-MNB-1364526.";
     //var mail_server = "smtp.gmail.com";
     //var mail_addr_sender = "ict.muscatairport@gmail.com";
     //var pswd = "123456789K";
