@@ -43,6 +43,7 @@ function FC_ContentsCall(strContentsName, strLanguage)
             PlaySpeech("Hi, I’m Tracey, welcome to the Novartis booth. Please click around on my screen and then speak to my smart human friends in the booth.");
             break;
         case "Home":
+            writeCookie("NavigationState", true, 30);
            location.href = "../../maincontents.htm";
             break;
         case "BoothSchedule":
@@ -109,13 +110,14 @@ $(document).ready(function(){
         $('.navigation').show();
         
     });
-    /*if (readCookie("NavigationState")) {
+    if (readCookie("NavigationState")) {
         $('.welcome-text, .get-started, footer').hide();
         $('.navigation').show();
-    }*/
+    }
     $('.close-menu').click(function(){
         $('.navigation').hide();
         $('.welcome-text, .get-started, footer').show();
+        writeCookie("NavigationState", false, 30);
     });
     
 
