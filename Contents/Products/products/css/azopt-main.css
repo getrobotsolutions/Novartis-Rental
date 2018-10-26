@@ -663,7 +663,7 @@ body #container .isi-wrapper.isi-partial {
     color: #03649b;
     text-align: left; }
   body #container .isi-wrapper.isi-partial p, body #container .isi-wrapper.isi-partial a {
-    color: #232323;
+    color: #000000;
     margin-bottom: 0.41rem; }
   body #container .isi-wrapper.isi-partial em {
     color: #03649b; }
