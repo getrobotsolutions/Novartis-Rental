@@ -1,4 +1,4 @@
-﻿//-----------------------------------------------------
+//-----------------------------------------------------
 //Redirects to homepage after 1 minute of not interaction
 //-----------------------------------------------------
 
@@ -15,13 +15,12 @@ $(document).click(function(event) {
 
 
 
-
 var c_language="";
 var isRobot = true;
 function JSMain()
 {
     // 언어 쿠키값 로드
-	c_language = readCookie("Language");
+    c_language = readCookie("Language");
     if (c_language == null)
         c_language = "en-us";
     
@@ -29,7 +28,7 @@ function JSMain()
     SetImage(c_language);
     
     // FaceTracking Off & 실시간 카메라 영상 디스플레이
-	if (isRobot) 
+    if (isRobot) 
     {
         //window.external.StartFaceTracking(false);
         //window.external.InitPose();
@@ -45,7 +44,7 @@ function GoHome()
 }
 function JSUnload() 
 {
-	if (isRobot)
+    if (isRobot)
     {
         if (isRobot)
         {
@@ -68,15 +67,15 @@ function SetImage(str)
 function UpdateCamImage()
 {
     var img = GetCaptureImage();
-	var canvas = document.getElementById("camImage");
-	var ctx = canvas.getContext("2d");
-	var image = new Image();
+    var canvas = document.getElementById("camImage");
+    var ctx = canvas.getContext("2d");
+    var image = new Image();
 
-	image.onload = function() 
+    image.onload = function() 
     {
-		ctx.drawImage(this, 0, 0, 910, 682);
-	}
-	image.src = "data:image/gif;base64," + img;
+        ctx.drawImage(this, 0, 0, 910, 682);
+    }
+    image.src = "data:image/gif;base64," + img;
 }
 
 //---------------------------------------------------------------------------//
@@ -84,8 +83,7 @@ function UpdateCamImage()
 //---------------------------------------------------------------------------//
 var isPhotoTaken = false;
 function TakePhoto()
-{   
-    
+{  
     PlaySpeech('Look at the camera on the top of the robots head');
     
     isPhotoTaken = false;
@@ -198,17 +196,17 @@ function HideKeyboard()
 var message = "";
 function keyboard(strPara)
 {
-	if (strPara == "bs")
+    if (strPara == "bs")
     {
-		message = message.slice(0, -1);
-	}
-	
-	else
+        message = message.slice(0, -1);
+    }
+    
+    else
     {
-		message += strPara;
-	}
+        message += strPara;
+    }
 
-	document.getElementById("address").innerHTML = message;
+    document.getElementById("address").innerHTML = message;
 }
 
 /* 전송 */
@@ -240,14 +238,35 @@ function SendEmail()
     
     // 이미지 파일명 지정 및 저장
     var d = new Date();
-	var fileName = d.getTime();	
-	SaveImage(fileName);
+    var fileName = d.getTime(); 
+    SaveImage(fileName);
     
     // 메일로 전송
     if (isRobot)
     {
         window.external.SendEmail(addr, imageFilePath, subject, body, mail_server, mail_addr_sender, pswd, port, ssl);
     }
+    $(document).ready(function(){
+
+    var $action = "http://robotaisolutions.com/robot-work/novartisApi.php";
+            //var pdf="https://drive.google.com/file/d/0B8Xsf8KvfUZ0Ym1jQ2RxQko2bGRXZkJzcmowbWRINzFuQk5N/preview";
+            var $data = {'email':addr};
+            //var $this = $(this);
+
+            //$this.prevAll('.alert').remove();
+
+            $.post( $action, $data, function( data ) {
+
+                if( data.response=='error' ){
+
+                    $this.before( '<div class="alert danger-border"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button> <i class="mdi mdi-close-box"></i> '+data.message+'</div>' );
+                }
+
+                if( data.response=='success' ){
+                   
+                }
+            }, "json");
+        });
     
     // 키보드 숨김
     HideKeyboard();
@@ -257,12 +276,12 @@ function SendEmail()
 /* 이미지 파일 저장 */
 var imageFilePath;
 function SaveImage(str)
-{	
-	var curPath = GetCurrentFolderPath();
-	var directory = curPath + "/../Resources/Photo/";
-	
-	imageFilePath = directory + str + ".jpg";
-	if (isRobot)
+{   
+    var curPath = GetCurrentFolderPath();
+    var directory = curPath + "/../Resources/Photo/";
+    
+    imageFilePath = directory + str + ".jpg";
+    if (isRobot)
     {
         window.external.SaveImage(imageFilePath, frameImagePath);
     }
@@ -271,11 +290,11 @@ function SaveImage(str)
 /* 현재 폴더 절대 경로 받아오기 */
 function GetCurrentFolderPath()
 {
-	var path = window.location.pathname;
+    var path = window.location.pathname;
     
-	path = path.substring(1,path.lastIndexOf("/")+1);
+    path = path.substring(1,path.lastIndexOf("/")+1);
     
-	return path;
+    return path;
 }
 
 /* 전송 결과 */
@@ -285,20 +304,20 @@ function OnSendEmailResult(str)
     if (isPhotoTaken == false)
         return;
     
-	if(str == "True")
+    if(str == "True")
     {
-		document.getElementById("email_state").src = "Images/email_success_"+c_language+".png";
+        document.getElementById("email_state").src = "Images/email_success_"+c_language+".png";
         
         // 메일 전송 성공 스피치
         //window.external.PlaySpeech(speechJsonObj["email_success"][c_language]);
-	}
-	else
+    }
+    else
     {
-		document.getElementById("email_state").src = "Images/email_fail_"+c_language+".png";
+        document.getElementById("email_state").src = "Images/email_fail_"+c_language+".png";
         
         // 메일 전송 실패 스피치
         //window.external.PlaySpeech(speechJsonObj["email_fail"][c_language]);
-	}
+    }
 }
 
 //---------------------------------------------------------------------------//
@@ -317,8 +336,8 @@ function PrintPhoto()
     
     // 이미지 파일명 지정 및 저장
     var d = new Date();
-	var fileName = d.getTime();	
-	SaveImage(fileName);
+    var fileName = d.getTime(); 
+    SaveImage(fileName);
     if (isRobot)
         window.external.PrintImage(imageFilePath, "cp900", 1);
 }
@@ -355,7 +374,7 @@ function Retake()
     SelectFrame(1);
     
     // 실시간 카메라 영상 디스플레이
-	if (isRobot) 
+    if (isRobot) 
     {
         window.external.StartCamViewer();    
         refreshIntervalId = setInterval("UpdateCamImage()", 33);

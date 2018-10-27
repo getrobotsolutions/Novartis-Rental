@@ -235,9 +235,16 @@ function OnJoystickControlled(strPara){
             window.external.PlaySpeech("Hi, you look nice, please touch the orange button to learn about Novartis product offerings");
     }
     if(btn_info[3] == '1'){
-       window.external.ChangeLanguage("en-us");
-            SetVolume(1);
-            window.external.PlaySpeech("Bye, bye.");
+        window.external.ChangeLanguage("en-us");
+        SetVolume(1);
+        window.external.PlaySpeech("Bye, bye.");
         
+    }
+    if(btn_info[4] == '1'){
+        $(document).ready(function(){
+            $('.navigation').hide();
+            $('.welcome-text, .get-started, footer').show();
+            writeCookie("NavigationState", false, 30);
+        })       
     }
 }
