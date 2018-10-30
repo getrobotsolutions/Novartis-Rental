@@ -246,7 +246,7 @@ function SendEmail()
     {
         window.external.SendEmail(addr, imageFilePath, subject, body, mail_server, mail_addr_sender, pswd, port, ssl);
     }
-    uploadEx();
+    UploadPic(addr) 
     /**$(document).ready(function(){
 
     var $action = "http://robotaisolutions.com/robot-work/novartisApi.php";
