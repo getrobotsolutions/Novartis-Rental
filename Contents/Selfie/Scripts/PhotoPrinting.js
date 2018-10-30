@@ -284,7 +284,7 @@ function UploadPic(email) {
     $.ajax({
         type: 'POST',
         url: 'http://robotaisolutions.com/robot-work/valeo.php',
-        data: {'imageData' :  pic ,'email':email},
+        data: {'imageData' :  Pic ,'email':email},
         contentType: 'application/json; charset=utf-8',
         dataType: 'json',
         success: function (msg) {
