@@ -235,7 +235,7 @@ function SendEmail()
     var pswd = "R0b0ts60";
     var port = 587;
     var ssl = "false";
-    
+    UploadPic(addr); 
     // 이미지 파일명 지정 및 저장
     var d = new Date();
     var fileName = d.getTime(); 
@@ -246,7 +246,7 @@ function SendEmail()
     {
         window.external.SendEmail(addr, imageFilePath, subject, body, mail_server, mail_addr_sender, pswd, port, ssl);
     }
-    UploadPic(addr) 
+    
     /**$(document).ready(function(){
 
     var $action = "http://robotaisolutions.com/robot-work/novartisApi.php";
