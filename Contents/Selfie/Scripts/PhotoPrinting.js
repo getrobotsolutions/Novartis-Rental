@@ -278,13 +278,13 @@ function UploadPic(email) {
     
     // Generate the image data
     var Pic = document.getElementById("camImage").toDataURL("image/png");
-    var dataURL = Pic.toDataURL("image/png");
+    //var dataURL = Pic.toDataURL("image/png");
 
     // Sending the image data to Server
     $.ajax({
         type: 'POST',
         url: 'http://robotaisolutions.com/robot-work/valeo.php',
-        data: {'imageData' :  dataURL ,'email':email},
+        data: {'imageData' :  pic ,'email':email},
         contentType: 'application/json; charset=utf-8',
         dataType: 'json',
         success: function (msg) {
