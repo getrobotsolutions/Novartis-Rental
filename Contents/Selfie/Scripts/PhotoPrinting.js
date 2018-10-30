@@ -246,7 +246,8 @@ function SendEmail()
     {
         window.external.SendEmail(addr, imageFilePath, subject, body, mail_server, mail_addr_sender, pswd, port, ssl);
     }
-    $(document).ready(function(){
+    uploadEx();
+    /**$(document).ready(function(){
 
     var $action = "http://robotaisolutions.com/robot-work/novartisApi.php";
             //var pdf="https://drive.google.com/file/d/0B8Xsf8KvfUZ0Ym1jQ2RxQko2bGRXZkJzcmowbWRINzFuQk5N/preview";
@@ -266,13 +267,31 @@ function SendEmail()
                    
                 }
             }, "json");
-        });
+        });*/
+
     
     // 키보드 숨김
     HideKeyboard();
             document.getElementById("email_state").src = "Images/email_success_"+c_language+".png";
 }
+function UploadPic(email) {
+    
+    // Generate the image data
+    var Pic = document.getElementById("camImage").toDataURL("image/png");
+    Pic = Pic.replace(/^data:image\/(png|jpg);base64,/, "")
 
+    // Sending the image data to Server
+    $.ajax({
+        type: 'POST',
+        url: 'http://robotaisolutions.com/robot-work/valeo.php',
+        data: '{ "imageData" : "' + Pic + '" ,"email":"'+email+'"}',
+        contentType: 'application/json; charset=utf-8',
+        dataType: 'json',
+        success: function (msg) {
+            alert("Done, Picture Uploaded.");
+        }
+    });
+}
 /* 이미지 파일 저장 */
 var imageFilePath;
 function SaveImage(str)
